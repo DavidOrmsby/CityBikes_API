@@ -1,23 +1,15 @@
-# Final-Project-Statistical-Modelling-with-Python
 
-## Project/Goals
--combine data from 3 seperate APIs
--do some EDA
--gain some insighst
 
-## Process
-### (your step 1)
--Get latitude, longitude, and free bikes from the citybike api
--Put it in a DataFrame
-### (your step 2)
--Use the latitude/longitude dataframe to get nearby POIs from the other 2 apis and add them to the data in new columns
+- In this project I will connect to the citybikes API to get info for all  the bike stations in Toronto
 
-## Results
--The yelp API is more detailed and easier to read
-## Challenges 
--Its hard for me to visualize the structure of jsons in my head, and the text you get is so messy its hard to see whats going on sometimes
--The yelp api requires you to put "bearer" in front of the api key but doesnt say this anywhere
--yelp api has a limit of 500/day which is less than the 717 bike stations
+- Then I will use the location data from the  stations to get the number of nearby businesses from the yelp and foursquare APIs
 
-## Future Goals
--If the api keys were more important, they should be in environment variables instead before pushing to GIT
+
+
+bikedata.csv - Data for all 717 bike stations in toronto
+venuedata.csv - Number of results (nearby businesses) from yelp and foursquare, in the same order as bikedata.csv, but shortened to 400 due to yelp api limit.
+These will  be combined in the joining_data notebook and then saved into a sql database (mydatabase)
+
+After that, we will run some models in the model_building notebook
+
+EDA and data cleaning are also done in the model_building notebook
