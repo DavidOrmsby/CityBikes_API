@@ -6,7 +6,7 @@ For this project I first used the citybikes API to get the location of each bike
 ## Process
 Step 1: Gather bike station data (city_bikes.ipynb)
 
-- Query the citybike API to get the latitude,longitude, and free bikes for all stations in Toronto and put them in a dataframe, which we then saved to csv for later use
+- Query the citybike API to get the latitude,longitude, and free bikes for all stations in Toronto and put them in a dataframe, which we then saved to our sql database for later use
 
 Step 2: Gather Yelp and Foursquare data (yelp_foursquare_EDA.ipynb)
 
@@ -16,7 +16,7 @@ Step 2: Gather Yelp and Foursquare data (yelp_foursquare_EDA.ipynb)
 
 Step 3: Joining The data together (joining_data.ipynb)
 
-- Here we finally join all the data together into one dataframe and create a SQL database of it
+- Here we  join all the data together 
 - We also do some initial cleaning and EDA, but not much is needed
 
 
