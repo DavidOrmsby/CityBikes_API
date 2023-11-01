@@ -8,13 +8,13 @@ Step 1: Gather bike station data (city_bikes.ipynb)
 
 - Query the citybike API to get the latitude,longitude, and free bikes for all stations in Toronto and put them in a dataframe, which we then saved to our sql database for later use
 
-Step 2: Gather Yelp and Foursquare data (yelp_foursquare_EDA.ipynb)
+Step 2: Gather Yelp and Foursquare data (yelp_foursquare.ipynb)
 
 - Using the latitude/longitude from the bike dataframe, we create a new dataframe with the amount of nearby businees according to the yelp and foursquare API.
 - EDA will be done in step 3
 
 
-Step 3: Joining The data together (joining_data.ipynb)
+Step 3: Joining The data together (joining_data_EDA.ipynb)
 
 - Here we  join all the data together 
 - We also do some initial cleaning and EDA, but not much is needed
